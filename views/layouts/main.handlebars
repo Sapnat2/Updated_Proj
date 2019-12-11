@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+
+  <title>Online Garage Sale</title>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/622bde9dfc.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/alertify.min.js"></script>
+
+  <link rel="shortcut icon" type="image/png" href="/images/logo.ico"/>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/css/alertify.min.css"/>
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.11.4/build/css/themes/default.min.css"/>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Shadows+Into+Light|Source+Sans+Pro&display=swap" >
+  <link rel="stylesheet" href="/styles/styles.css" media="screen" title="no title" charset="utf-8">
+
+</head>
+
+<body>
+
+  {{!-- Navbar --}}
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-between" id="navbarToggle">
+
+            <div class="container-fluid">
+                <div class="row ">
+                    <div class="col-md-4 p-0">
+                        <a class="navbar-brand d-inline-block" href="/"><img src="/images/logo.png" id="logo"></a>
+
+                        <ul class="navbar-nav mt-2 mt-lg-0 d-inline-flex">
+                            <li id="nav-buy" class="nav-item">
+                                <a class="nav-link" href="/listings">Buy</a>
+                            </li>
+                            <li id="nav-sell" class="nav-item">
+                                <a class="nav-link" href="/sell">Sell</a>
+                            </li>
+                            <li id="nav-manage" class="nav-item">
+                                <a class="nav-link" href="/manage">Manage</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col d-inline-flex">
+
+                        <form id="search-form" class="form-inline my-2 my-lg-0 w-100">
+                            <div class="input-group w-100">
+                                <input id="input-search" type="text" class="form-control" placeholder="Search">
+                                <div class="input-group-append">
+                                    <button id="btn-search" class="btn btn-outline-dark" type="button"><i class="fas fa-search"></i></button>
+                                </div>
+                            </div>
+                        </form>
+
+                    </div>
+                    <div class="col-md-4 text-right my-auto p-0">
+
+                        <p id="current-location" class="my-0 hiddeninput">
+                            <i class="fas fa-map-marker-alt fa-lg"></i>
+                            <span id="location-name"></span>
+                        </p>
+
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+  <script src="/js/main.js"></script>
+
+  {{{body}}}
+
+</body>
+
+</html>
